@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pegasus Travels by Luxor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Playfair Display', serif; margin: 0; padding: 0; background-color: #001F3F; color: #FFFFFF; }
+        header { background-color: #001F3F; padding: 20px; text-align: center; }
+        .logo img { max-width: 300px; }
+        nav { margin: 20px 0; }
+        nav a { color: #D4AF37; margin: 0 15px; text-decoration: none; font-size: 18px; }
+        section { padding: 50px 20px; text-align: center; }
+        .gold { color: #D4AF37; }
+        .button { background-color: #D4AF37; color: #001F3F; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        .accordion { background-color: #002B5B; color: white; cursor: pointer; padding: 18px; width: 100%; text-align: left; border: none; outline: none; transition: 0.4s; }
+        .panel { padding: 0 18px; background-color: #002B5B; display: none; overflow: hidden; }
+        footer { background-color: #001F3F; padding: 20px; text-align: center; font-size: 14px; }
+        @media (max-width: 768px) { nav a { display: block; margin: 10px 0; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/logo-pegasus.png" alt="Pegasus Travels by Luxor"></div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#journeys">Journeys</a>
+            <a href="#why">Why Us</a>
+            <a href="#partners">Partners</a>
+            <a href="#contact">Contact</a>
+            <a href="#">EN/ES</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="images/infografico.png" alt="Pegasus Travels: El Arte de Viajar con Propósito" style="max-width: 100%; margin-bottom: 20px;">
+        <h1 class="gold">Creemos que viajar no es desplazarse. Es comprender. Es conectar. Es preservar.</h1>
+        <p>Pegasus Travels by Luxor nace para redefinir el viaje. No buscamos el movimiento, sino el entendimiento profundo del entorno y su historia.</p>
+        <a href="#journeys" class="button">Descubre Nuestro Signature Journey 2026</a>
+    </section>
+
+    <section id="about" style="background-color: #002B5B;">
+        <h2 class="gold">Identidad de Marca</h2>
+        <p>Estructura: Marca independiente bajo el respaldo de Luxor. Alcance: Orientada al mercado europeo premium. Idiomas: Bilingüe (EN/ES) con expansión a DE/FR.</p>
+        <p>El Viajero Objetivo: “Diseñamos experiencias para viajeros que buscan algo más que turismo: buscan significado.” No es un turista convencional; es un buscador de narrativas y contextos. Valora la profundidad cultural sobre la acumulación de destinos.</p>
+        <p>La Sinergia: Luxor aporta trayectoria operativa; Pegasus, visión internacional y diseño cultural. Una división boutique con respaldo industrial.</p>
+    </section>
+
+    <section id="journeys">
+        <h2 class="gold">Nuestros Viajes</h2>
+        <h3>Ruta Cultural Misional – Camino al 29 (Junio 2026)</h3>
+        <p>Destino: Misiones Jesuíticas del Oriente Boliviano. Duración: 7 noches / 8 días. Grupo: 8-14 pasajeros. Experiencia patrimonial viva culminando en la Fiesta de San Pedro y San Pablo en San Javier (29 de junio). No es un tour religioso convencional; es una inmersión cultural curada.</p>
+        <p>Incluye: Recepción musical, hotel 5★, visitas guiadas, comidas seleccionadas. Tarifa neta: €2.064 (doble). Comisión agencia: 20%.</p>
+        
+        <button class="accordion">Día 1: Llegada a Santa Cruz</button>
+        <div class="panel">
+            <p>• Recepción en aeropuerto con bienvenida musical misional.</p>
+            <p>• Traslado a hotel 5★ en Santa Cruz.</p>
+            <p>• Cena de bienvenida y orientación cultural.</p>
+        </div>
+        
+        <button class="accordion">🌄 Día 2: Santa Cruz → Chochís → San José de Chiquitos</button>
+        <div class="panel">
+            <p>• Salida temprano en transporte ejecutivo.</p>
+            <p>• Santuario Mariano de Chochís.</p>
+            <p>• Paisajes serranos y miradores.</p>
+            <p>• Llegada a San José.</p>
+            <p>• Visita templo jesuítico.</p>
+            <p>• Cena regional.</p>
+            <img src="https://boliviatravelsite.com/Images/Attractionphotos/Jesuit-Missions-02.jpg" alt="Templo en San José" style="max-width: 100%; margin: 20px 0;">
+        </div>
+        
+        <button class="accordion">🌿 Día 3: San José – Naturaleza y Patrimonio</button>
+        <div class="panel">
+            <p>• Pinturas rupestres.</p>
+            <p>• Pozas naturales.</p>
+            <p>• Mirador panorámico.</p>
+            <p>• Tiempo libre en centro histórico.</p>
+            <p>• Segunda noche en San José.</p>
+        </div>
+        
+        <button class="accordion">🎻 Día 4: San José → San Ignacio</button>
+        <div class="panel">
+            <p>• Traslado escénico.</p>
+            <p>• Iglesia misional.</p>
+            <p>• Museo.</p>
+            <p>• Recorrido urbano guiado.</p>
+            <p>• Cena típica.</p>
+            <img src="https://i0.wp.com/viajandoencarro.com/wp-content/uploads/2017/12/IMG_6726-1024x658-1.jpg?resize=1024%2C658&ssl=1" alt="Iglesia en San Ignacio" style="max-width: 100%; margin: 20px 0;">
+        </div>
+        
+        <button class="accordion">🏛 Día 5: San Ignacio → Concepción</button>
+        <div class="panel">
+            <p>• Ruta patrimonial.</p>
+            <p>• Iglesia y museo.</p>
+            <p>• Experiencia gastronómica local.</p>
+            <p>• Paseo histórico.</p>
+            <img src="https://boliviatravelsite.com/Images/Attractionphotos/jesuit-missions.jpg" alt="Iglesia en Concepción" style="max-width: 100%; margin: 20px 0;">
+        </div>
+        
+        <button class="accordion">💧 Día 6: Concepción → San Javier</button>
+        <div class="panel">
+            <p>• Llegada a San Javier.</p>
+            <p>• Visita iglesia misional.</p>
+            <p>• Aguas termales.</p>
+            <p>• Tiempo libre previo a fiesta.</p>
+            <p>• Cena especial previa celebración.</p>
+        </div>
+        
+        <button class="accordion">🎉 Día 7: 29 de Junio – Fiesta Patronal en San Javier</button>
+        <div class="panel">
+            <p>• Actos litúrgicos oficiales.</p>
+            <p>• Procesión tradicional.</p>
+            <p>• Presentación de orquesta misional.</p>
+            <p>• Verbena popular.</p>
+            <p>• Integración con comunidad.</p>
+            <p>• Cierre cultural auténtico y emocional.</p>
+            <img src="https://boliviatravelsite.com/Images/Attractionphotos/Jesuit-Missions-05.jpg" alt="Orquesta en festival" style="max-width: 100%; margin: 20px 0;">
+        </div>
+        
+        <button class="accordion">🚐 Día 8: Retorno a Santa Cruz</button>
+        <div class="panel">
+            <p>• Desayuno.</p>
+            <p>• Traslado privado.</p>
+            <p>• Conexiones aéreas.</p>
+        </div>
+    </section>
+
+    <section id="why" style="background-color: #002B5B;">
+        <h2 class="gold">Nuestra Propuesta de Valor</h2>
+        <p>Curadores, no Vendedores: No vendemos destinos. Curamos experiencias. Cada itinerario es una narrativa construida con rigor.</p>
+        <ul style="list-style: none; padding: 0;">
+            <li>Grupos Reducidos: Intimidad y atención personalizada.</li>
+            <li>Logística Premium: Confort y eficiencia sin sacrificar autenticidad.</li>
+            <li>Curaduría Cultural Rigurosa: Investigación profunda detrás de cada parada.</li>
+            <li>Enfoque en Patrimonio Vivo: Rutas históricas de profunda identidad en Sudamérica.</li>
+        </ul>
+    </section>
+
+    <section id="partners">
+        <h2 class="gold">Alianzas B2B</h2>
+        <p>Producto exclusivo anual. Grupo premium reducido. Patrimonio cultural vivo. Estructura respaldada por Luxor. Posicionamiento cultural diferencial.</p>
+        <p>Contacta para acuerdos: [Phone/Email Placeholder]</p>
+    </section>
+
+    <section id="contact" style="background-color: #002B5B;">
+        <h2 class="gold">Contacto</h2>
+        <form id="contactForm" style="max-width: 600px; margin: 0 auto;">
+            <input type="text" id="name" placeholder="Nombre" style="width: 100%; margin: 10px 0; padding: 10px;" required>
+            <input type="email" id="email" placeholder="Email" style="width: 100%; margin: 10px 0; padding: 10px;" required>
+            <textarea id="message" placeholder="Mensaje" style="width: 100%; margin: 10px 0; padding: 10px; height: 150px;" required></textarea>
+            <button type="submit" class="button">Enviar</button>
+        </form>
+        <p>Web: [URL Placeholder] | Contacto: [Email Placeholder]</p>
+    </section>
+
+    <footer>
+        <p>Pegasus Travels by Luxor © 2026. Excelencia en Viajes Culturales.</p>
+    </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            if (this.checkValidity()) {
+                alert("Mensaje enviado con éxito!");
+            }
+        });
+    </script>
+</body>
+</html>
