@@ -250,7 +250,7 @@
     <h2 class="gold">Contacto</h2>
     
     <!-- Formulario Netlify nativo -->
-    <form name="contacto" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" style="max-width: 600px; margin: 0 auto;">
+    <form name="contacto" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" **data-netlify-success-redirect="/gracias.html"** ... >
         <!-- Campo oculto requerido por Netlify -->
         <input type="hidden" name="form-name" value="contacto" />
         
@@ -298,6 +298,7 @@
 </body>
 
 </html>
+
 
 
 
