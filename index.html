@@ -248,19 +248,28 @@
 </script>
    <section id="contact" style="background-color: #002B5B;">
     <h2 class="gold">Contacto</h2>
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="max-width: 600px; margin: 0 auto;">
-        <input type="hidden" name="form-name" value="contact" />
+    
+    <!-- Formulario Netlify nativo -->
+    <form name="contacto" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" style="max-width: 600px; margin: 0 auto;">
+        <!-- Campo oculto requerido por Netlify -->
+        <input type="hidden" name="form-name" value="contacto" />
+        
+        <!-- Honeypot anti-spam (invisible para humanos) -->
         <p hidden>
-            <label>No llenes esto si eres humano: <input name="bot-field" /></label>
+            <label>Deja este campo vacío si eres humano: 
+                <input name="bot-field" />
+            </label>
         </p>
-        <input type="text" name="name" placeholder="Nombre" style="width: 100%; margin: 10px 0; padding: 10px;" required>
-        <input type="email" name="email" placeholder="Email" style="width: 100%; margin: 10px 0; padding: 10px;" required>
-        <textarea name="message" placeholder="Mensaje" style="width: 100%; margin: 10px 0; padding: 10px; height: 150px;" required></textarea>
+        
+        <input type="text" name="nombre" placeholder="Nombre" required style="width: 100%; margin: 10px 0; padding: 10px; box-sizing: border-box;">
+        <input type="email" name="email" placeholder="Email" required style="width: 100%; margin: 10px 0; padding: 10px; box-sizing: border-box;">
+        <textarea name="mensaje" placeholder="Mensaje" required style="width: 100%; margin: 10px 0; padding: 10px; height: 150px; box-sizing: border-box;"></textarea>
+        
         <button type="submit" class="button">Enviar</button>
     </form>
-    <p>Web: [URL Placeholder] | Contacto: [Email Placeholder]</p>
+    
+    <p style="margin-top: 20px;">Web: [Tu URL de Netlify] | Contacto: [tuemail@dominio.com]</p>
 </section>
-
     <footer>
         <p>Pegasus Travels by Luxor © 2026. Excelencia en Viajes Culturales.</p>
     </footer>
@@ -289,6 +298,7 @@
 </body>
 
 </html>
+
 
 
 
