@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -22,9 +23,7 @@
 </head>
 <body>
     <header>
-<div class="logo">
-  <div class="logo"><img src="./images/logo.png" alt="Pegasus Travels by Luxor"></div>
-</div>       
+<div class="logo"><img src="./images/logo.png" alt="Pegasus Travels by Luxor"></div>
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -245,12 +244,14 @@
 
     // Opcional: auto-avance cada 5 segundos
     // setInterval(() => moveSlide(1), 5000);  
-  <!-- Formulario Netlify nativo -->
-  <section id="contact" style="background-color: #002B5B;">
+</script>
+
+<!-- Formulario Netlify nativo -->
+<section id="contact" style="background-color: #002B5B;">
     <h2 class="gold">Contacto</h2>
     
     <!-- Formulario Netlify – nombre único para evitar conflictos -->
-    <form name="formulario-contacto" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" style="max-width: 600px; margin: 0 auto;">
+    <form id="contactForm" name="formulario-contacto" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/gracias.html" style="max-width: 600px; margin: 0 auto;">
         <!-- Campo oculto OBLIGATORIO -->
         <input type="hidden" name="form-name" value="formulario-contacto" />
         
@@ -287,9 +288,9 @@
         }
 
         document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            if (this.checkValidity()) {
-                alert("Mensaje enviado con éxito!");
+            // Netlify maneja el envío; este listener es solo para validación adicional si fuera necesaria
+            if (!this.checkValidity()) {
+                event.preventDefault();
             }
         });
     </script>
